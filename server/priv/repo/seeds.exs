@@ -9,3 +9,14 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+
+
+
+%Server.Song{}
+|> Server.Song.changeset(%{titel: "We Are Sex Bob-Omb", artists: "Sex Bob-Omb"})
+|> Server.Repo.insert!
+
+
+%Server.Song{}
+|> Server.Song.changeset(%{titel: "Scott Pilgrim", artists: "Plumtree"})
+|> Server.Repo.insert!

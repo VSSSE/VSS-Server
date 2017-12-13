@@ -56,3 +56,4 @@ config :server, Server.Repo,
   database: "phoenix",
   hostname: "localhost",
   pool_size: 10
+

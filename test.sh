@@ -1,6 +1,9 @@
 
 #!/bin/bash
 
+#mix deps.get
+
+
 cd ./server/
 mix compile
 if [ $? -eq 0 ]; then

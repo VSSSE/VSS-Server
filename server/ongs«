@@ -1,0 +1,17 @@
+                                            Tabelle »public.songs«
+    Spalte    |             Typ             | Sortierfolge | NULL erlaubt? |            Vorgabewert            
+--------------+-----------------------------+--------------+---------------+-----------------------------------
+ id           | bigint                      |              | not null      | nextval('songs_id_seq'::regclass)
+ titel        | character varying(255)      |              |               | 
+ genre        | character varying(255)      |              |               | 
+ artists      | character varying(255)      |              |               | 
+ albums       | character varying(255)      |              |               | 
+ youtube_link | character varying(255)      |              |               | 
+ spotify_link | character varying(255)      |              |               | 
+ year         | date                        |              |               | 
+ movie        | character varying(255)      |              |               | 
+ inserted_at  | timestamp without time zone |              | not null      | 
+ updated_at   | timestamp without time zone |              | not null      | 
+Indexe:
+    "songs_pkey" PRIMARY KEY, btree (id)
+

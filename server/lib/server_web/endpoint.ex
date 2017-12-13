@@ -36,7 +36,7 @@ defmodule ServerWeb.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_server_key",
-    signing_salt: "wZrF3nAw"
+    signing_salt: "My9X5lvt"
 
   plug ServerWeb.Router
 
